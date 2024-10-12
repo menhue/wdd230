@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Page</title>
+    <!-- Google Fonts -->
+    <link href="h<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"> rel="stylesheet">
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Basic Typography and Color Schema */
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5; /* Light background for contrast */
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            color: #222; /* Darker color for headings */
+        }
+
+        a {
+            text-decoration: none;
+            color: #007acc; /* Blue color for links */
+        }
+
+        a:hover {
+            color: #005fa3; /* Darker blue on hover */
+        }
+
+        /* Main Layout and Alignment */
+        main {
+            max-width: 800px; /* Adjust width as necessary */
+            margin: 20px auto; /* Centers horizontally */
+            padding: 20px;
+            background-color: #ffffff; /* White background for the main content */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+            border-radius: 8px; /* Rounded corners */
+        }
+
+        /* CSS Grid for Main Column Layout */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr; /* Single column layout */
+            gap: 20px; /* Space between grid items */
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styling the Course Links List */
+        .course-links {
+            list-style-type: none; /* Removes bullets */
+            padding-left: 0; /* Removes left padding */
+        }
+
+        .course-links li {
+            margin-bottom: 10px;
+        }
+
+        .course-links a {
+            display: block;
+            padding: 10px;
+            background-color: #e6f4f1; /* Light greenish background for links */
+            border-radius: 4px;
+            color: #333;
+            transition: background-color 0.3s ease;
+        }
+
+        .course-links a:hover {
+            background-color: #c2e6e1; /* Darker shade on hover */
+        }
+
+        /* Consistent Spacing and Alignment */
+        section {
+            margin-bottom: 30px; /* Space between sections */
+        }
+
+        p {
+            margin-bottom: 15px; /* Space between paragraphs */
+        }
+
+        /* Button Styles */
+        button {
+            background-color: #007acc;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+        }
+
+        button:hover {
+            background-color: #005fa3;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr; /* Single column layout on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Welcome to the Styled Page</h1>
+        <p>This is an example of a page styled using CSS with good design principles.</p>
+        
+        <section>
+            <h2>Main Section</h2>
+            <div class="container">
+                <div class="card">
+                    <h3>Card 1</h3>
+                    <p>This is the first card in the main section.</p>
+                </div>
+                <div class="card">
+                    <h3>Card 2</h3>
+                    <p>This is the second card in the main section.</p>
+                </div>
+                <div class="card">
+                    <h3>Card 3</h3>
+                    <p>This is the third card in the main section.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Course Links</h2>
+            <ul class="course-links">
+                <li><a href="#">Course 1</a></li>
+                <li><a href="#">Course 2</a></li>
+                <li><a href="#">Course 3</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Call to Action</h2>
+            <button>Click Me</button>
+        </section>
+    </main>
+</body>
+</html>
