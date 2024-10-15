@@ -51,3 +51,43 @@ ul.course-links li {
 .section {
     margin-bottom: 30px;
 }
+nav ul {
+list-style-type:none;
+padding: 0;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  nav ul li a::before {
+    content: '→ ';
+    color: blue;
+  }
+  .hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+    .menu {
+      display: none;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .menu.active {
+      display: flex;
+    }
+    nav ul li {
+      display: block;
+    }
+  }
