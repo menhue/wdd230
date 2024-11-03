@@ -32,3 +32,11 @@ button.addEventListener('click', function () {
         userEntry.value = '';
     }
 });
+// Select the toggle switch and the body element
+const darkModeToggle = document.getElementById("darkModeToggle");
+const body = document.body;
+
+// Event listener to toggle dark mode class
+darkModeToggle.addEventListener("change", () => {
+    body.classList.toggle("dark-mode");
+});
