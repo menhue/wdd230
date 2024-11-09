@@ -1,0 +1,130 @@
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #3498db; 
+    --font-color: #333;     
+    --input-bg-color: #f7f9fa;
+    --border-radius: 5px;
+    --padding: 12px;
+    --font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--font-color);
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--padding);
+    text-align: center;
+    border-radius: var(--border-radius);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: white;
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: var(--font-size);
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="range"] {
+    padding: var(--padding);
+    font-size: var(--font-size);
+    background-color: var(--input-bg-color);
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="range"]:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+span#ratingValue {
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+button {
+    padding: var(--padding);
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: var(--font-size);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+}
+
+footer p {
+    margin: 5px 0;
+}
