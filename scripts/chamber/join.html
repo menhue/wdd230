@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us</title>
+    <link rel="stylesheet" href="base.css">
+    <script defer src="join.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Join Our Community</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="form-section">
+            <form method="get" action="thankyou.html">
+                
+                <!-- Applicant's First Name -->
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required><br><br>
+
+                <!-- Applicant's Last Name -->
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required><br><br>
+
+                <!-- Applicant's Title/Position -->
+                <label for="title">Title/Position:</label>
+                <input type="text" id="title" name="title" pattern="[a-zA-Z\s-]{7,}" 
+                       title="Must be at least 7 characters and contain only letters, hyphens, or spaces" required><br><br>
+
+                <!-- Email Address -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@domain.com" required><br><br>
+
+                <!-- Mobile Phone Number -->
+                <label for="phone">Mobile Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
+
+                <!-- Organization Name -->
+                <label for="organization">Organization Name:</label>
+                <input type="text" id="organization" name="organization" required><br><br>
+
+                <!-- Membership Level -->
+                <label for="membership">Membership Level:</label>
+                <select id="membership" name="membership" required>
+                    <option value="">Select a Level</option>
+                    <option value="NP">Non-Profit Membership (Free)</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select><br><br>
+
+                <!-- Organization Description -->
+                <label for="description">Business/Organization Description:</label>
+                <textarea id="description" name="description" rows="4"></textarea><br><br>
+
+                <!-- Hidden Field for Timestamp -->
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <!-- Submit Button -->
+                <button type="submit">Join Now</button>
+            </form>
+        </section>
+
+        <!-- Membership Benefits Sidebar -->
+        <aside class="membership-benefits">
+            <h3>Membership Benefits</h3>
+            <ul>
+                <li>Non-Profit: Access to community resources</li>
+                <li>Bronze: Event invites, basic advertising</li>
+                <li>Silver: Spotlight positions, training discounts</li>
+                <li>Gold: All benefits + premium support</li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script>
+        // Set current timestamp in the hidden input field
+        document.getElementById('timestamp').value = Date.now();
+
+        // Display the current year and last modified date
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = document.lastModified;
+    </script>
+</body>
+</html>
