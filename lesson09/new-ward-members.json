@@ -1,0 +1,34 @@
+{
+    "familyName": "Kennedy",
+    "moveInDate": "2024-11-15",
+    "numberOfPeople": 5,
+    "visitedByBishopric": true,
+    "members": [
+      {
+        "name": "James Leenue Kennedy",
+        "gender": "Male",
+        "birthdate": "1985-04-06"
+      },
+      {
+        "name": "Angeline T Kennedy",
+        "gender": "Female",
+        "birthdate": "1988-07-24"
+      },
+      {
+        "name": "Jamesetta N. Kennedy",
+        "gender": "Female",
+        "birthdate": "2010-06-15"
+      },
+      {
+        "name": "Abraham Kennedy",
+        "gender": "Male",
+        "birthdate": "2013-09-30"
+      },
+      {
+        "name": "Jamesina N. Kennedy",
+        "gender": "Female",
+        "birthdate": "2017-11-20"
+      }
+    ]
+  }
+  
